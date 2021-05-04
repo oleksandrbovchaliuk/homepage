@@ -37,6 +37,7 @@
   color: black;
   background: white;
 }
+
   .color {
     cursor: pointer;
     white-space: nowrap;
@@ -47,6 +48,7 @@
     margin: 0;
     padding: 0;
   }
+
   .color:before {
     content: " ";
     display: inline-block;
@@ -57,21 +59,27 @@
     vertical-align: top;
     position: relative;
   }
+
   .color.midnightblue:before {
     background-color: midnightblue;
   }
+
   .color.indigo:before {
     background-color: indigo;
   }
+
   .color.gold:before {
     background-color: gold;
   }
+
   .color.red:before {
     background-color: red;
   }
+
   .color.salmon:before {
     background-color: salmon;
   }
+
   .color.sienna:before {
     background-color: sienna;
   }
@@ -94,9 +102,13 @@
   }
 
   [data-tag="#1 in"] > *:first-child:after { content: "#1 in"; }
+
   [data-tag="#2 in"] > *:first-child:after { content: "#2 in"; }
+
   [data-tag="I was named"] > *:first-child:after { content: "I was named"; }
+ 
   [data-tag="#71 in"] > *:first-child:after { content: "#71 in"; }
+ 
   [data-tag="In a survey of 4000 online matches for Super Street Fighter IV"] > *:first-child:after { content: "In a survey of 4000 online matches for Super Street Fighter IV"; }
 
   [data-tag]:hover > *:first-child:after {
@@ -105,10 +117,15 @@
     box-shadow: none;
   }
   
+ 
   [data-tag="#1 in"]:hover > *:first-child:after { background: gold; }
+ 
   [data-tag="#2 in"]:hover > *:first-child:after { background: greenyellow; }
+ 
   [data-tag="I was named"]:hover > *:first-child:after { background: purple; }
+ 
   [data-tag="#71 in"]:hover > *:first-child:after { background: maroon; }
+ 
   [data-tag="In a survey of 4000 online matches for Super Street Fighter IV"]:hover > *:first-child:after { background: red; }
 
   ul:not(.timeline) > li.highlighted,
